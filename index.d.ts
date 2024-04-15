@@ -29,7 +29,7 @@ namespace DottedMapLib {
   }
 
   interface SvgSettings {
-    shape?: 'circle' | 'hexagon';
+    shape?: 'circle' | 'hexagon' | 'square';
     color?: string;
     backgroundColor?: string;
     radius?: number;

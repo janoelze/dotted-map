@@ -75,6 +75,12 @@ function DottedMapWithoutCountries({ map, avoidOuterPins = false }) {
           return `<circle cx="${x}" cy="${y}" r="${pointRadius}" fill="${
             svgOptions.color || color
           }" />`;
+        } else if (shape === 'square') {
+          return `<rect x="${x - pointRadius}" y="${y - pointRadius}" width="${
+            pointRadius * 2
+          }" height="${pointRadius * 2}" fill="${
+            svgOptions.color || color
+          }" />`;
         } else if (shape === 'hexagon') {
           const sqrt3radius = Math.sqrt(3) * pointRadius;
 
